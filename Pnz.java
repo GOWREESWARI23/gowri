@@ -1,23 +1,12 @@
-import java.util.Scanner;
-class Pnz
+#include <stdio.h>
+int main()
 {
- public static void main(String args[])
- {
-  int a;
-  System.out.println("enter the value for a");
-  Scanner in=new Scanner(System.in);
-   a=in.nextint();
-   if(a>0)
-   {
-    System.out.println("positive");
-   }
-   else if(a<=0)
-   { 
-    System.out.println("negative"); 
-   else
-   {
-    System.out.println("zero");
-    
-   }
- }
+  int gow, n, fact = 1;
+printf("Enter a number\n");
+  scanf("%d", &n);
+ for (gow =1; gow<=n;gow++)
+    fact = fact * gow;
+ 
+  printf("Factorial of %d = %d\n", n, fact);
+ return 0;
 }
